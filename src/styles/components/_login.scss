@@ -1,0 +1,30 @@
+.login-form {
+    max-width: 400px;
+}
+.login-form-forgot {
+    float: right;
+}
+.ant-col-rtl .login-form-forgot {
+    float: left;
+}
+.login-form-button {
+    width: 100%;
+}
+
+.login-container {
+    width: 300px;
+    padding-top: 20px;
+}
+
+.site-form-item-icon {
+    opacity: 25%;
+}
+
+.login-spin {
+    color: 'black';
+}
+.login-error {
+    color: red;
+    text-align: center;
+    padding-bottom: 5px;
+}

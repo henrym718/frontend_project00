@@ -1,0 +1,60 @@
+/* Modal Overlay - Fondo oscurecido */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); // Fondo oscurecido con opacidad
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; // Asegura que esté en la parte superior
+    animation: fadeIn 0.3s ease; // Animación de entrada
+}
+
+/* Modal - Contenedor principal */
+.modal {
+    background-color: white; // Fondo blanco
+    padding: 20px;
+    border-radius: 4px; // Bordes cuadrados
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); // Sombra sutil
+    animation: slideIn 0.3s ease; // Animación de entrada
+    position: relative;
+}
+
+/* Botón de Cerrar */
+.modal-close-button {
+    position: absolute;
+    background: none;
+    border: none;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    z-index: 1;
+}
+
+.modal button:hover {
+    background: rgb(245, 241, 241);
+}
+
+/* Animación de entrada - fadeIn */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Animación de entrada - slideIn */
+@keyframes slideIn {
+    from {
+        transform: translateY(-50px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}

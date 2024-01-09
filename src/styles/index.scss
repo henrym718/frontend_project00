@@ -1,0 +1,12 @@
+/* base */
+@import './base/settings';
+
+/* components */
+@import './components/modal';
+@import './components/navBar';
+@import './components/loading';
+@import './components/login';
+@import './components/search';
+
+/* pages */
+@import './pages//home';

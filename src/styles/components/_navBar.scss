@@ -1,0 +1,54 @@
+/* Estilos para el navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Coloca los elementos en los extremos */
+    align-items: center; /* Centra verticalmente los elementos */
+    padding: 10px 20px; /* Espaciado interior del navbar */
+    background-color: #ffffff; /* Color de fondo del navbar */
+    color: rgb(1, 1, 1); /* Color de texto del navbar */
+}
+
+/* Estilos para el logo */
+.navbar-logo {
+    /* Estilos específicos para el logo si es necesario */
+}
+
+/* Estilos para el menú de navegación */
+.navbar-menu {
+    display: flex;
+    align-items: center;
+}
+
+.login-nav-link {
+    text-decoration: none; /* Elimina el subrayado predeterminado */
+    color: #000000; /* Cambia el color del texto */
+    font-weight: bold; /* Establece el peso de la fuente en negrita */
+    margin-right: 20px; /* Añade margen derecho entre los enlaces */
+}
+
+/* Estilos para el enlace activo */
+.login-nav-link.active {
+    color: #12268c; /* Cambia el color del enlace activo */
+}
+
+/* Estilos para los elementos del menú */
+.navbar-menu p {
+    margin-right: 20px; /* Espaciado entre elementos del menú */
+}
+
+/* Estilos para el botón */
+.navbar-button {
+    border: 1px solid rgb(69, 69, 69); /* Borde para el botón */
+    background-color: transparent; /* Fondo transparente */
+    color: rgb(0, 0, 0); /* Color de texto */
+    padding: 5px 15px; /* Espaciado interior del botón */
+    cursor: pointer; /* Cursor de puntero */
+    transition: border-color 0.3s, background-color 0.3s; /* Transición en hover */
+
+    /* Estilos de hover */
+    &:hover {
+        border-color: #fff; /* Cambia el borde en hover */
+        background-color: #fff; /* Cambia el fondo en hover */
+        color: #333; /* Cambia el color de texto en hover */
+    }
+}
